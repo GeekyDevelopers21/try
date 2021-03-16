@@ -18,6 +18,7 @@ v.addEventListener('click',()=>{
        a.classList.add('transform');
        v.style.color = 'green';
        a.innerText = 'Successfully connected to "BX-2985 TEMP BT MODULE"';
+      document.querySelector('#ftp').setAttribute('placeholder',"Getting data...");
        setTimeout(()=>{
         a.classList.add('help');
        }, 5000);
@@ -36,6 +37,8 @@ w.addEventListener('click',()=>{
        a.classList.add('transform');
        w.style.color = 'green';
        a.innerText = 'Successfully connected to "BX-26 PRES BT MODULE"';
+      document.querySelector('#eps').setAttribute('placeholder',"Getting data...");
+
        setTimeout(()=>{
         a.classList.add('help');
        }, 5000);
