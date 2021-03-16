@@ -8,8 +8,12 @@ var rdown = document.querySelector('#report');
 var v = document.querySelector('#wT');
 var w = document.querySelector('#wP');
 var a = document.querySelector('#msg');
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 v.addEventListener('click',()=>{
-        
+       topFunction();
        a.classList.remove('help');
        a.classList.add('transform');
        v.style.color = 'green';
@@ -27,7 +31,7 @@ v.addEventListener('click',()=>{
     
 });
 w.addEventListener('click',()=>{
-        
+       topFunction(); 
        a.classList.remove('help');
        a.classList.add('transform');
        w.style.color = 'green';
